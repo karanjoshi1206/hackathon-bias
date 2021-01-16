@@ -144,6 +144,7 @@ section {
   border-radius: 10px 0 0 10px;
   padding: 10px 20px;
   color: white;
+  font-weight: bold;
 }
 .main_right {
   color: rgb(0, 217, 255);
@@ -326,7 +327,7 @@ section {
     left: 50%;
   }
   .svg7 {
-    top: 350px;
+    top: 394px;
     width: 300px;
     left: 35%;
   }
