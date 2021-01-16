@@ -152,8 +152,7 @@ section {
   padding-right: 30px;
   background: rgba(255, 255, 255, 0.753);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+
   border-radius: 0 10px 10px 0;
 }
 .main_content a {
@@ -196,7 +195,38 @@ section {
   border-bottom: 2px dotted crimson;
   margin-bottom: 20px;
 }
+/* more part styling  */
+.more {
+  padding: 5px 10px;
+  background: rgba(11, 201, 229, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
 
+  margin-top: 50px;
+  transition: 0.5s;
+}
+.more_content {
+  margin: 60px 0;
+}
+.more_content h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.number {
+  font-family: "Dancing Script", cursive;
+  font-size: 200px;
+  text-align: center;
+  color: rgb(0, 183, 255);
+}
+.time {
+  font-size: 40px;
+  text-align: center;
+}
+.more_details {
+  margin: 40px !important;
+}
 /* faq page styling  */
 .faq {
   width: 100%;
@@ -349,6 +379,25 @@ section {
     height: 200px;
     width: 300px;
   }
+  .more {
+    margin-top: 30px;
+  }
+  .more_content {
+    margin: 40px 0;
+  }
+  .more_content h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .number {
+    font-size: 100px;
+  }
+  .time {
+    font-size: 30px;
+  }
+  .more_details {
+    margin: 30px !important;
+  }
 }
 @media (max-width: 500px) {
   svg {
@@ -363,6 +412,7 @@ section {
   }
   .main {
     overflow-x: hidden !important;
+    height: 80vh;
   }
   .main_content h1 {
     font-size: 40px;
