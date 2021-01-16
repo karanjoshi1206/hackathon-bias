@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding: 50px 100px;
+  margin-top: 50px;
+}
+/* navigation bar styling  */
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 30px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.logo h1 {
+  color: black;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+}
+.nav .list {
+  margin-left: 50px;
+}
+.nav .list li {
+  display: inline;
+}
+.nav .list li a {
+  margin-right: 30px;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+
+.nav .list li a:hover {
+  color: crimson;
+}
+.ham {
+  display: none;
+}
+.border_bottom {
+  border-bottom: 2px solid crimson;
+  transition: 0.5s ease;
+}
+
+/* home page styling  */
+.main {
+  height: 100vh;
+  position: relative;
+}
+.svg1 {
+  position: absolute;
+  top: 100px;
+  left: 20%;
+  animation: zoom 2s infinite;
+  transition: 0.5s ease;
+}
+.svg2 {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  animation: zoom 2s infinite;
+  transition: 0.5s ease;
+}
+.svg3 {
+  position: absolute;
+  top: 300px;
+  left: 60%;
+  animation: zoom 3s infinite;
+  transition: 0.5s ease;
+}
+.svg4 {
+  position: absolute;
+  top: 250px;
+  left: 70%;
+  animation: zoom 4s infinite;
+  transition: 0.5s ease;
+}
+.svg5 {
+  position: absolute;
+  top: 350px;
+  left: 10%;
+  animation: zoom 5s infinite;
+  transition: 0.5s ease;
+}
+.svg6 {
+  position: absolute;
+  top: 400px;
+  left: 70%;
+  animation: zoom 2s infinite;
+  transition: 0.5s ease;
+}
+.svg7 {
+  position: absolute;
+  top: 350px;
+  left: 35%;
+  animation: zoom 3s infinite;
+  transition: 0.5s ease;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.main_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main_content h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main_left {
+  background: rgba(1, 225, 255, 0.692);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
+  color: white;
+}
+.main_right {
+  color: rgb(0, 217, 255);
+  padding: 10px 20px;
+  padding-right: 30px;
+  background: rgba(255, 255, 255, 0.753);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0 10px 10px 0;
+}
+.main_content a {
+  padding: 5px 10px;
+  background: rgba(11, 201, 229, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  transition: 0.5s;
+}
+.main_content a:hover {
+  color: rgba(11, 201, 229, 0.7);
+  background-color: black;
+}
+/* about page styling */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content img {
+  height: 250px;
+  width: 400px;
+  object-fit: cover;
+  margin-left: 30px;
+}
+.text {
+  text-align: left;
+}
+.text h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 5px;
+  border-bottom: 2px dotted crimson;
+  margin-bottom: 20px;
+}
+
+/* faq page styling  */
+.faq {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq .contentbx {
+  position: relative;
+  margin: 10px 20px;
+}
+.faq .contentbx .label {
+  position: relative;
+  padding: 10px;
+  background: rgba(1, 247, 225, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  color: black;
+}
+.faq .contentbx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.faq .contentbx .faqcontent {
+  position: relative;
+  background: white;
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+}
+.faq .contentbx.accordian_active .label::before {
+  content: "-";
+}
+
+.faq .contentbx.accordian_active .faqcontent {
+  height: 150px;
+  padding: 10px;
+}
+
+/* responsiveness */
+@media (max-width: 990px) {
+  .ham {
+    display: block;
+  }
+  .nav .list {
+    top: 70px;
+    left: -100%;
+    margin: 0;
+    display: block;
+    position: fixed;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 99;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .logo h1 {
+    font-size: 30px;
+  }
+  .nav .list.active {
+    top: 70px;
+    left: 0;
+    margin: 0;
+    display: block;
+    position: fixed;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.3s all ease;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav .list li a {
+    display: block;
+    color: black !important;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .nav {
+    padding: 10px;
+  }
+
+  section {
+    padding: 50px 20px;
+    margin-top: 50px;
+  }
+  .svg1 {
+    top: 60px;
+    left: 10%;
+    width: 300px;
+  }
+  .svg2 {
+    top: 100px;
+    left: 66%;
+  }
+  .svg3 {
+    top: 250px;
+    left: 40%;
+  }
+  .svg4 {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    width: 300px;
+  }
+  .svg5 {
+    position: absolute;
+    top: 350px;
+    left: 10%;
+    width: 350px;
+  }
+  .svg6 {
+    position: absolute;
+    top: 400px;
+    width: 300px;
+    left: 50%;
+  }
+  .svg7 {
+    top: 350px;
+    width: 300px;
+    left: 35%;
+  }
+  .main_content h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content img {
+    margin: 30px 0;
+  }
+  .faq {
+    flex-direction: column;
+  }
+  .faq img {
+    height: 200px;
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  svg {
+    height: 300px;
+    width: 200px !important;
+  }
+  .text h1 {
+    font-size: 20px;
+  }
+  .text p {
+    font-size: 16px;
+  }
+  .main {
+    overflow-x: hidden !important;
+  }
+  .main_content h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .svg1 rect,
+  .svg7 rect {
+    height: 100px;
+    width: 100px;
+  }
+  .content img {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    margin-left: 0px;
+  }
+}

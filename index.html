@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon | BIAS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header  -->
+    <nav class="nav">
+        <div class="logo">
+            <a href="#home">
+                <h1>Hackathon</h1>
+            </a>
+        </div>
+        <ul id="list" class="list">
+            <li><a onclick="toggle()" href="#home">Home</a></li>
+            <li><a onclick="toggle()" href="#content">About</a></li>
+            <li><a onclick="toggle()" href="#faq">FAQ</a></li>
+            <li><a onclick="toggle()" href="#">Sponsors</a></li>
+            <li><a onclick="toggle()" href="#">Contact Us</a></li>
+        </ul>
+
+        <div id="ham" class="ham">
+            <i onclick="toggle()" id="bar" class="bar fas fa-bars"></i>
+            </svg>
+        </div>
+    </nav>
+
+    <!-- main  -->
+    <section id="home" class="main">
+        <svg class="svg2" width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="5" fill="none" />
+        </svg>
+        <svg class="svg1" width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:none;stroke:red;stroke-width:5;" />
+        </svg>
+        <svg class="svg3" width="100" height="100">
+            <circle cx="30" cy="30" r="15" stroke="green" stroke-width="5" fill="none" />
+        </svg>
+        <svg class="svg6" width="100" height="100">
+            <circle cx="30" cy="30" r="15" stroke="crimson" stroke-width="5" fill="none" />
+        </svg>
+        <svg class="svg7" width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:none;stroke:red;stroke-width:5;" />
+
+        </svg>
+        <svg class="svg4" width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="90" height="90" style="fill:none;stroke:blue;stroke-width:5;" />
+        </svg> <svg class="svg5" width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="90" height="90" style="fill:none;stroke:blue;stroke-width:5;" />
+        </svg>
+        <div class="main_content">
+            <h1><span class="main_left">Hacka</span><span class="main_right">thon</span></h1>
+            <a href="#">Browse More</a>
+        </div>
+    </section>
+
+    <!-- content  -->
+    <section id="content" class="content">
+        <div data-aos="fade-right" data-aos-duration="1000" class="text">
+            <h1>What is Hackathon</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, iusto? Doloribus ea exercitationem,
+                necessitatibus explicabo eligendi laborum eum. Praesentium rem excepturi nemo nostrum laborum
+                laboriosam, iure similique, doloribus veniam aliquam numquam eaque doloremque velit? Beatae architecto
+                consequatur doloremque, omnis quam similique quis porro officia, possimus nihil error quasi cum impedit
+                tenetur velit eos voluptate, vero adipisci expedita saepe ex sunt quo? Ea, qui modi. Labore consequuntur
+                fugit adipisci optio maxime ut impedit non corrupti, minima sapiente nemo aspernatur culpa similique
+                dolorem possimus deserunt sit officia tempora quas repudiandae dolor saepe ex fugiat dolorum. Aliquid
+                deleniti laudantium, id soluta neque praesentium.</p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="hackaimg"> <img src="/images/hackathon.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- faq  -->
+    <section class="faq" id="faq">
+        <img data-aos="zoom-in" src="/images/faq.webp" alt="">
+        <div data-aos="zoom-in" class="accordian">
+            <div class="contentbx">
+                <div class="label">List one</div>
+                <div class="faqcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, qui non sapiente sunt
+                        excepturi, delectus omnis doloremque consequuntur magni vitae commodi sequi? Fugiat sapiente
+                        commodi
+                        quia vero fuga debitis libero.</p>
+                </div>
+            </div>
+            <div class="contentbx">
+                <div class="label">List Two</div>
+                <div class="faqcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, qui non sapiente sunt
+                        excepturi, delectus omnis doloremque consequuntur magni vitae commodi sequi? Fugiat sapiente
+                        commodi
+                        quia vero fuga debitis libero.</p>
+                </div>
+            </div>
+            <div class="contentbx">
+                <div class="label">List Three</div>
+                <div class="faqcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, qui non sapiente sunt
+                        excepturi, delectus omnis doloremque consequuntur magni vitae commodi sequi? Fugiat sapiente
+                        commodi
+                        quia vero fuga debitis libero.</p>
+                </div>
+            </div>
+            <div class="contentbx">
+                <div class="label">List Four</div>
+                <div class="faqcontent">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, qui non sapiente sunt
+                        excepturi, delectus omnis doloremque consequuntur magni vitae commodi sequi? Fugiat sapiente
+                        commodi
+                        quia vero fuga debitis libero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="/script.js"> </script>
+</body>
+
+</html>
