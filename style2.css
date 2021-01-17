@@ -103,7 +103,7 @@ body {
 }
 .form_search {
   display: flex;
-  margin-top: 100px;
+  margin-top: 150px;
   justify-content: center;
   align-items: center;
 }
@@ -191,6 +191,9 @@ body {
   }
 }
 @media (max-width: 720px) {
+  .form_search {
+    margin-top: 100px;
+  }
   .title {
     font-size: 20px;
   }
