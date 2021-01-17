@@ -151,7 +151,8 @@ table.customTable th {
 }
 
 table.customTable thead {
-  background-color: #6cd2faab;
+  background-color: #2a83f8;
+  color: white;
 }
 
 a {
