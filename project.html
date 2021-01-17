@@ -5,41 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
-<style>
-    table.customTable {
-        width: 100%;
-        background-color: #FFFFFF;
-        border-collapse: collapse;
-        border-width: 2px;
-        border-color: #7ea8f8;
-        border-style: solid;
-        color: #000000;
-        margin-top: 100px;
-    }
-
-    table.customTable td,
-    table.customTable th {
-        border-width: 2px;
-        border-color: #7ea8f8;
-        border-style: solid;
-        padding: 5px;
-    }
-
-    table.customTable thead {
-        background-color: #7ea8f8;
-    }
-
-    a {
-        color: black;
-        font-weight: bold;
-    }
-</style>
 
 <body>
     <nav class="nav">
@@ -49,7 +18,7 @@
             </a>
         </div>
         <ul id="list" class="list">
-            <li><a onclick="toggle()" href="#home">Home</a></li>
+            <li><a onclick="toggle()" href="/">Home</a></li>
             <li><a onclick="toggle()" href="#content">About</a></li>
             <li><a onclick="toggle()" href="#faq">FAQ</a></li>
             <li><a onclick="toggle()" href="#">Sponsors</a></li>
@@ -67,46 +36,29 @@
             <tr>
                 <th>Project</th>
                 <th>Author</th>
-                <th>View Projects</th>
+                <th>Click To View Project</th>
             </tr>
+
         </thead>
+
         <tbody id='table_body'>
 
         </tbody>
     </table>
+    <h1 id="remove"
+        style="text-align: center;  font-family: 'Dancing Script', cursive; font-weight: bold; font-size: 40px; ">
+        Please
+        wait its loading.......</h1>
+    <div class=" form_search">
+        <input type="text" id="search" class="search-item" placeholder="Enter Project Title">
+        <a id="searchbutton">Search now</a>
+    </div>
+    <div class="proj_container"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/project.js"> </script>
 
-    <script>
-        let url = `https://script.google.com/macros/s/AKfycbwUJRQF4zC0HQF5L2HauF1wh_Jn4SJtagdt3mqGRjLWg6fmq28/exec?sheetName=Hackathon`;
-        async function searchdata() {
-            const res = await fetch(url)
-            const data = await res.json();
-            console.log(data)
-            displaydata(data)
-        }
-        function displaydata(data) {
-            main_data = [];
 
-            for (let i = 0; i < data.length; i++) {
-                main_data += ` <tr>
-                <td>${data[i].topic}</td>
-                <td>${data[i].author}</td>
-                <td><a href="/individual_projs.html#${data[i].topic}">View Projects</a></td>
-            </tr>`
-                let container = document.querySelector("#table_body")
-                container.innerHTML = `${main_data}`
-            }
-        }
 
-        searchdata();
-        let ham = document.getElementById("ham")
-        let bar = document.getElementById("bar")
-
-        function toggle() {
-            list.classList.toggle("active")
-            bar.classList.toggle("fa-times")
-        }
-
-    </script>
 </body>
 
 </html>

@@ -10,17 +10,21 @@
 body {
   overflow-x: hidden !important;
 }
+html {
+  scroll-behavior: smooth;
+}
 .nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 30px 100px;
+  padding: 20px 100px 5px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
+  box-shadow: 5px 5px 5px #cacaca;
 }
 
 .logo h1 {
@@ -49,7 +53,8 @@ body {
 }
 .content {
   margin: 50px;
-  padding: 50px 100px;
+  margin-bottom: 100px;
+  padding: 30px 40px;
   border: 2px solid black;
 }
 .top {
@@ -107,6 +112,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.form_search a {
+  cursor: pointer;
+}
 .search-item {
   width: 60%;
   height: 35px;
@@ -122,8 +130,35 @@ body {
   color: white;
   border-radius: 10px;
 }
+table.customTable {
+  width: 80%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #7ea8f8;
+  border-style: solid;
+  color: #000000;
+  margin: 100px auto;
+  height: 80vh;
+}
 
-@media (max-width: 929px) {
+table.customTable td,
+table.customTable th {
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.438);
+  border-style: solid;
+  padding: 5px;
+}
+
+table.customTable thead {
+  background-color: #6cd2faab;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 990px) {
   .ham {
     display: block;
   }
@@ -180,7 +215,8 @@ body {
   }
   .content {
     margin: 50px;
-    padding: 50px 50px;
+    margin-bottom: 150px;
+    padding: 50px;
     border: 2px solid black;
   }
   .projimg img {

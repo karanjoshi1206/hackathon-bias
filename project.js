@@ -2,15 +2,18 @@ let url = `https://script.google.com/macros/s/AKfycbwUJRQF4zC0HQF5L2HauF1wh_Jn4S
 async function searchdata() {
     const res = await fetch(url)
     const data = await res.json();
-    console.log(data)
+    // console.log(data)
     displaydata(data)
+    displaytabledata(data)
+
+
 }
 function displaydata(data) {
     main_data = [];
 
     for (let i = 0; i < data.length; i++) {
         main_data += `<div id="content" class="content ${data[i].topic.toUpperCase()} ">
-    <div class="top">
+    <div id="${data[i].topic}" class="top">
         <h1  class="title">${data[i].topic.toUpperCase()}</h1>
         <h2 class="Author">${data[i].author}<span class="date">Nov 5, 2020</span></h1>
             <div class="icons">
@@ -35,8 +38,22 @@ function displaydata(data) {
         let container = document.querySelector(".proj_container")
         container.innerHTML = `${main_data}`
     }
+    let remove = document.getElementById("remove")
+    remove.style.display = "none";
 }
+function displaytabledata(data) {
+    table_data = [];
 
+    for (let i = 0; i < data.length; i++) {
+        table_data += ` <tr>
+        <td>${data[i].topic}</td>
+        <td>${data[i].author}</td>
+        <td><a href="#${data[i].topic}">View Project</a></td>
+    </tr>`
+        let table_body = document.querySelector("#table_body")
+        table_body.innerHTML = `${table_data}`
+    }
+}
 searchdata();
 
 let dis = document.getElementById("searchbutton").addEventListener("click", () => {
