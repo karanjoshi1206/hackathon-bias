@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+
+<body>
+    <div class="proj_container">
+
+    </div>
+    <script>
+        let url = `https://script.google.com/macros/s/AKfycbwUJRQF4zC0HQF5L2HauF1wh_Jn4SJtagdt3mqGRjLWg6fmq28/exec?sheetName=Hackathon`;
+        // let container = document.getElementById()
+        async function searchdata() {
+            const res = await fetch(url)
+            const data = await res.json();
+            console.log(data)
+            displaydata(data)
+        }
+        function displaydata(data) {
+            main_data = [];
+            // data.forEach(dataelement => {
+            // let content = document.createElement("div")
+            for (let i = 0; i < data.length; i++) {
+                main_data += `<div id="content" class="content">
+            <div class="top">
+                <h1 class="title">${data[i].topic}</h1>
+                <h2 class="Author">${data[i].author}<span class="date">Nov 5, 2020</span></h1>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/karan-joshi-5397591a7/"><i class="fab fa-linkedin"
+                                aria-hidden="true"></i></a>
+                        <a href="${data[i].githubLink}"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://github.com/karanjoshi1206/mausam
+                    "><i class="fa fa-link" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+            <div class="description">
+                <p>${data[i].description}
+                <div class="projimg"><img src="/images/hackathon.jpg" alt=""></div>
+
+
+
+                </p>
+            </div>
+
+        </div> `
+                let container = document.querySelector(".proj_container")
+                container.innerHTML = `${main_data}`
+            }
+        }
+
+        searchdata();
+    </script>
+</body>
+
+</html>

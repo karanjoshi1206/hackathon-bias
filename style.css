@@ -271,7 +271,22 @@ section {
   height: 150px;
   padding: 10px;
 }
-
+/* projects page styling  */
+.proj_container {
+  height: 100%;
+  margin: 50px 100px;
+}
+.proj_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proj_image img {
+  margin: 30px 0;
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
 /* responsiveness */
 @media (max-width: 990px) {
   .ham {

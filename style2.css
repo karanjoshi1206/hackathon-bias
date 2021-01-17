@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  margin: 50px;
+  padding: 50px 100px;
+  border: 2px solid black;
+}
+.top {
+  position: relative;
+  margin: 30px 0;
+}
+.icons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.icons a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  font-size: 20px;
+  outline: none;
+}
+.icons a:hover i {
+  transition: 0.5s all ease;
+
+  transform: translateY(-15px);
+}
+.title {
+  color: crimson;
+}
+.date {
+  margin: 0 40px;
+  font-weight: lighter;
+}
+.projimg img {
+  height: 400px;
+  width: 800px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.projimg {
+  text-align: center;
+}
+.bulb {
+  margin: 40px 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+.like {
+  margin: 0 10px;
+  font-size: 20px;
+}
+.bulb.toggle {
+  color: yellow;
+}
+
+@media (max-width: 929px) {
+  .icons {
+    position: absolute;
+    left: -10px;
+    bottom: -40px;
+  }
+  .description {
+    margin: 70px 0;
+  }
+  .content {
+    margin: 50px;
+    padding: 50px 50px;
+    border: 2px solid black;
+  }
+  .projimg img {
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 720px) {
+  .title {
+    font-size: 20px;
+  }
+  .content {
+    margin: 0px;
+    padding: 0px 20px;
+    border: none;
+  }
+  .date {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .icons a {
+    margin-left: 10px;
+    font-size: 17px;
+  }
+}
