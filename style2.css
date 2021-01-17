@@ -225,6 +225,11 @@ a {
     margin: 10px;
     border-radius: 10px;
   }
+  table.customTable {
+    width: 95%;
+
+    height: 80vh;
+  }
 }
 @media (max-width: 720px) {
   .form_search {
