@@ -287,6 +287,36 @@ section {
   width: 400px;
   object-fit: cover;
 }
+.contact h1 {
+  margin: auto;
+  padding: 10px 15px;
+  background-color: rgb(35, 255, 255);
+  width: fit-content;
+  color: white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.contact p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.contact a {
+  margin: auto;
+  padding: 10px 15px;
+  background: rgb(35, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  width: fit-content;
+  color: white;
+  transition: 0.5s;
+}
+.contact a:hover {
+  color: rgb(35, 255, 255);
+  background-color: white;
+}
 /* responsiveness */
 @media (max-width: 990px) {
   .ham {
