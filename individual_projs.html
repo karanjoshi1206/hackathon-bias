@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="/">
+                <h1>Hackathon</h1>
+            </a>
+        </div>
+        <ul id="list" class="list">
+            <li><a onclick="toggle()" href="#home">Home</a></li>
+            <li><a onclick="toggle()" href="#content">About</a></li>
+            <li><a onclick="toggle()" href="#faq">FAQ</a></li>
+            <li><a onclick="toggle()" href="#">Sponsors</a></li>
+            <li><a href="/project.html">Projects</a></li>
+            <li><a onclick="toggle()" href="#">Contact Us</a></li>
+        </ul>
+
+        <div id="ham" class="ham">
+            <i onclick="toggle()" id="bar" class="bar fas fa-bars"></i>
+            </svg>
+        </div>
+    </nav>
+    <div class="form_search">
+        <input type="text" id="search" class="search-item" placeholder="Enter project name">
+        <a id="searchbutton" href="#">Search now</a>
+    </div>
+    <div class="proj_container"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/project.js"> </script>
+
+
+
+</body>
+
+</html>

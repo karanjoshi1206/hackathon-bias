@@ -293,7 +293,7 @@ section {
     display: block;
   }
   .nav .list {
-    top: 70px;
+    top: 56px;
     left: -100%;
     margin: 0;
     display: block;
@@ -311,7 +311,7 @@ section {
     font-size: 30px;
   }
   .nav .list.active {
-    top: 70px;
+    top: 56px;
     left: 0;
     margin: 0;
     display: block;
