@@ -16,29 +16,31 @@
 <body>
 
     <!-- header  -->
-    <nav class="nav">
-        <div class="logo">
-            <a href="/">
-                <h1>Hackathon</h1>
-            </a>
-        </div>
-        <ul id="list" class="list">
-            <li><a onclick="toggle()" href="#home">Home</a></li>
-            <li><a onclick="toggle()" href="#content">About</a></li>
-            <li><a onclick="toggle()" href="#faq">FAQ</a></li>
-            <li><a class="register" onclick="toggle()" href="#">Register fot the event</a></li>
-            <li><a href="/project.html">Projects</a></li>
-            <li><a onclick="toggle()" href="#contact">Contact Us</a></li>
-        </ul>
 
-        <div id="ham" class="ham">
-            <i onclick="toggle()" id="bar" class="bar fas fa-bars"></i>
-            </svg>
-        </div>
-    </nav>
 
     <!-- main  -->
     <section id="home" class="main">
+        <nav class="nav">
+            <div class="logo">
+                <a href="/">
+                    <h1>Hackathon</h1>
+                </a>
+            </div>
+            <ul id="list" class="list">
+                <li><a onclick="toggle()" href="#home">Home</a></li>
+                <li><a onclick="toggle()" href="#content">About</a></li>
+                <li><a onclick="toggle()" href="#faq">FAQ</a></li>
+                <li><a href="/project.html">Projects</a></li>
+                <li><a onclick="toggle()" href="#contact">Contact Us</a></li>
+                <li><a class="register" onclick="toggle()" href="#">Register for the event</a></li>
+
+            </ul>
+
+            <div id="ham" class="ham">
+                <i onclick="toggle()" id="bar" class="bar fas fa-bars"></i>
+                </svg>
+            </div>
+        </nav>
         <svg class="svg2" width="100" height="100">
             <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="5" fill="none" />
         </svg>
@@ -61,6 +63,9 @@
             <rect x="50" y="20" rx="20" ry="20" width="90" height="90" style="fill:none;stroke:blue;stroke-width:5;" />
         </svg>
         <div class="main_content">
+            <h4>We bring <br> <b class="bold" style="font-size: 25px;">Technology and Innovation</b> <br> Together</h4>
+            <h3>48 hours of full <br> <b class="bold" style="font-size: 25px;">Learning and Excitement</b>
+            </h3>
             <h1><span class="main_left">Hacka</span><span class="main_right">thon</span></h1>
             <a href="#content">Browse More</a>
         </div>
@@ -71,23 +76,45 @@
         <section id="content" class="content">
             <div data-aos="zoom-in" class="text">
                 <h1>What is Hackathon</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, iusto? Doloribus ea
-                    exercitationem,
-                    necessitatibus explicabo eligendi laborum eum. Praesentium rem excepturi nemo nostrum laborum
-                    laboriosam, iure similique, doloribus veniam aliquam numquam eaque doloremque velit? Beatae
-                    architecto
-                    consequatur doloremque, omnis quam similique quis porro officia, possimus nihil error quasi cum
-                    impedit
-                    tenetur velit eos voluptate, vero adipisci expedita saepe ex sunt quo? Ea, qui modi. Labore
-                    consequuntur
-                    fugit adipisci optio maxime ut impedit non corrupti, minima sapiente nemo aspernatur culpa similique
-                    dolorem possimus deserunt sit officia tempora quas repudiandae dolor saepe ex fugiat dolorum.
-                    Aliquid
-                    deleniti laudantium, id soluta neque praesentium.</p>
+                <p>Hey all!!! BIAS TECHNOFORUM welcomes you all to our fresh event….
+
+                    WHAT IS HACKATHON??
+                    A hackathon is a combination of two words hack+marathon and it is an event of any duration where
+                    people come together to solve problems.
+                    It can be students, young entrepreneurs, computer programmers and developers, graphic designers,
+                    interface designers, project managers etc.. that collaborate intensively on different projects.
+                    <br>
+                    IN OUR HACKATHON EVENT :- The topics we are going to covered in the event are -
+                    <br> <br>
+                <ol>
+                    <li>Women safety</li>
+                    <li> Environmental Awareness/Stability/Conservation
+                    </li>
+                    <li> Steam punks
+                    </li>
+                    <li> Medical issues
+                    </li>
+                    <li> Tours and Travels
+                    </li>
+                </ol>
+                .</p>
             </div>
             <div data-aos="zoom-in" class="hackaimg"> <img src="/images/hackathon.jpg" alt="">
             </div>
 
+        </section>
+        <section class="rules">
+            <h1>Rules</h1>
+            <ol>
+                <li>One can participate in the event as an individual or a team.
+                </li>
+                <li>The project should match the category they choose.
+                </li>
+                <li>Each/Individual should complete the prototype according to the timeline</li>
+                <li>The code of the project must be uploaded to GITHUB and links should be shared in the form.</li>
+                <li>Each submission must contain a short video (30-50 sec max) of the working there project.</li>
+                <li>Registration will be open soon, check the timeline for the updates and register yourself.</li>
+            </ol>
         </section>
         <center> <a href="#more" class="more">Know more</a></center>
     </div>
@@ -160,8 +187,10 @@
         </ul>
     </div>
     <!-- faq  -->
+
     <center>
-        <h1 data-aos="zoom-in" style="margin-bottom: -20px;margin-top: 20px;">
+        <h1 data-aos="zoom-in" style="   font-family: 'Iceland', cursive; background: #121212; margin-bottom:
+            -20px;margin-top: 20px;color: #fff;">
             Frequently Asked Questions
         </h1>
     </center>
@@ -216,8 +245,11 @@
     </section>
     <!-- javascript -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script defer src="/script.js"> </script>
+    <script src="/script.js">
+
+    </script>
 </body>
 
 </html>

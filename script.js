@@ -15,3 +15,19 @@ for (i = 0; i < accordian.length; i++) {
         this.classList.toggle("accordian_active")
     })
 }
+
+AOS.init();
+
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 40) {
+            $(".nav").css("background", "black");
+        }
+
+        else {
+            $(".nav").css("background", "none");
+        }
+    })
+})
