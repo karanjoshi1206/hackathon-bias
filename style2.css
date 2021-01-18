@@ -14,17 +14,19 @@ html {
   scroll-behavior: smooth;
 }
 .nav {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 20px 100px 5px;
+  padding: 10px 100px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-  box-shadow: 5px 5px 5px #cacaca;
 }
 
 .logo h1 {
