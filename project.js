@@ -1,4 +1,4 @@
-let url = `https://script.google.com/macros/s/AKfycbwUJRQF4zC0HQF5L2HauF1wh_Jn4SJtagdt3mqGRjLWg6fmq28/exec?sheetName=Hackathon`;
+let url = `https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwUJRQF4zC0HQF5L2HauF1wh_Jn4SJtagdt3mqGRjLWg6fmq28/exec?sheetName=Hackathon`;
 async function searchdata() {
     const res = await fetch(url)
     const data = await res.json();
@@ -10,24 +10,22 @@ async function searchdata() {
 }
 function displaydata(data) {
     main_data = [];
-
     for (let i = 0; i < data.length; i++) {
         main_data += `<div id="content" class="content ${data[i].topic.toUpperCase()} ">
     <div id="${data[i].topic}" class="top">
         <h1  class="title">${data[i].topic.toUpperCase()}</h1>
-        <h2 class="Author">${data[i].author}<span class="date">Nov 5, 2020</span></h1>
+        <h2 class="Author">${data[i].author}<span class="date">${data[i].submission}</span></h1>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/karan-joshi-5397591a7/"><i class="fab fa-linkedin"
-                        aria-hidden="true"></i></a>
+            
                 <a href="${data[i].githubLink}"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://github.com/karanjoshi1206/mausam
+                <a href="${data[i].projectLink}
             "><i class="fa fa-link" aria-hidden="true"></i></a>
             </div>
     </div>
     <div class="description">
         <p>${data[i].description}
-        <div class="projimg"><img src="/images/hackathon.jpg" alt=""></div>
+        <div class="projimg">${data[i].videoLink}
+        </div>
 
 
 

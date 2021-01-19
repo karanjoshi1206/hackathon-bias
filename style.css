@@ -88,7 +88,7 @@ section {
 .main {
   height: 100vh;
   position: relative;
-  background-image: url("/images/try.jpg");
+  background-image: url("/images/bg.jpg");
   background-position: center;
   background-size: cover;
   font-family: "Poppins", sans-serif;
@@ -233,7 +233,7 @@ section {
 .content img {
   height: 250px;
   width: 400px;
-  object-fit: cover;
+  object-fit: contain;
   margin-left: 30px;
 }
 .text {
@@ -314,6 +314,12 @@ section {
   background: #121212;
   font-family: "Iceland", cursive;
 }
+.faq img {
+  height: 300px;
+  width: 500px;
+  object-fit: contain;
+}
+
 .faq .contentbx {
   position: relative;
   margin: 10px 20px;

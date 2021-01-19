@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +9,14 @@
 }
 body {
   overflow-x: hidden !important;
+  background-color: rgba(0, 0, 0, 0.959);
 }
 html {
   scroll-behavior: smooth;
 }
 .nav {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgb(0, 0, 0);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   display: flex;
@@ -26,13 +27,15 @@ html {
   position: fixed;
   top: 0;
   left: 0;
+  font-family: "Poppins", sans-serif;
+
   z-index: 99;
 }
 
 .logo h1 {
-  color: black;
+  color: white;
   font-size: 40px;
-  font-family: "Dancing Script", cursive;
+  font-family: "Iceland", cursive;
 }
 .nav .list {
   margin-left: 50px;
@@ -42,22 +45,26 @@ html {
 }
 .nav .list li a {
   margin-right: 30px;
-  color: black;
+  color: white;
   font-weight: 700;
   padding-bottom: 4px;
 }
 
 .nav .list li a:hover {
-  color: crimson;
+  color: #15f4ee;
 }
 .ham {
   display: none;
+  color: white;
 }
 .content {
-  margin: 50px;
-  margin-bottom: 100px;
+  margin: 10px 0 0;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
   padding: 30px 40px;
   border: 2px solid black;
+  background-color: black;
+  color: white;
 }
 .top {
   position: relative;
@@ -70,7 +77,7 @@ html {
 }
 .icons a {
   text-decoration: none;
-  color: black;
+  color: white;
   margin-left: 20px;
   font-size: 20px;
   outline: none;
@@ -81,38 +88,35 @@ html {
   transform: translateY(-15px);
 }
 .title {
-  color: crimson;
+  color: #15f4ee;
 }
 .date {
   margin: 0 40px;
   font-weight: lighter;
 }
-.projimg img {
-  height: 400px;
-  width: 800px;
-  margin: 20px;
-  border-radius: 10px;
-}
+
 .projimg {
+  margin-top: 30px !important;
   text-align: center;
+  height: 400px;
+  width: 600px;
+  position: relative;
+  margin: auto;
 }
-.bulb {
-  margin: 40px 0;
-  font-size: 30px;
-  cursor: pointer;
+.projimg iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-.like {
-  margin: 0 10px;
-  font-size: 20px;
-}
-.bulb.toggle {
-  color: yellow;
-}
+
 .form_search {
   display: flex;
   margin-top: 150px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .form_search a {
   cursor: pointer;
@@ -124,6 +128,7 @@ html {
   padding: 5px 10px;
   border: none;
   border-bottom: 2px solid black;
+  border-radius: 4px;
 }
 #searchbutton {
   margin-left: 20px !important;
@@ -133,32 +138,43 @@ html {
   border-radius: 10px;
 }
 table.customTable {
+  animation: shadow 2s infinite;
   width: 80%;
-  background-color: #ffffff;
+  background-color: #000000;
   border-collapse: collapse;
   border-width: 2px;
   border-color: #7ea8f8;
   border-style: solid;
-  color: #000000;
-  margin: 100px auto;
+  color: #ffffff;
+  margin: 120px auto;
   height: 80vh;
 }
-
+@keyframes shadow {
+  0% {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  50% {
+    box-shadow: 0 8px 62px 0 rgba(37, 46, 168, 0.37);
+  }
+  100% {
+    box-shadow: 0 8px 32px 0 rgba(37, 46, 168, 0.37);
+  }
+}
 table.customTable td,
 table.customTable th {
   border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.438);
+  border-color: #ffffff;
   border-style: solid;
   padding: 5px;
 }
 
 table.customTable thead {
-  background-color: #2a83f8;
+  background-color: #15f4ee;
   color: white;
 }
 
 a {
-  color: black;
+  color: white;
   font-weight: bold;
 }
 @media (max-width: 990px) {
@@ -166,7 +182,7 @@ a {
     display: block;
   }
   .nav .list {
-    top: 56px;
+    top: 50px;
     left: -100%;
     margin: 0;
     display: block;
@@ -174,7 +190,7 @@ a {
     padding: 100px 50px;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     background-color: #fff;
     transition: 0.5s;
     z-index: 99;
@@ -184,7 +200,7 @@ a {
     font-size: 30px;
   }
   .nav .list.active {
-    top: 56px;
+    top: 50px;
     left: 0;
     margin: 0;
     display: block;
@@ -192,7 +208,7 @@ a {
     padding: 100px 50px;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     background-color: #fff;
     transition: 0.3s all ease;
     z-index: 999;
@@ -222,12 +238,7 @@ a {
     padding: 50px;
     border: 2px solid black;
   }
-  .projimg img {
-    height: 250px;
-    width: 300px;
-    margin: 10px;
-    border-radius: 10px;
-  }
+
   table.customTable {
     width: 95%;
 
@@ -253,5 +264,18 @@ a {
   .icons a {
     margin-left: 10px;
     font-size: 17px;
+  }
+  .projimg {
+    height: 260px;
+    width: 300px;
+    object-fit: contain !important;
+    position: relative;
+  }
+  .projimg iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 }
