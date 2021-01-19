@@ -771,7 +771,7 @@ section {
     top: -190px;
     width: 60px;
     height: 35px;
-    appearance: none;
+    -webkit-appearance: none;
     background: #c6c6c6;
     outline: none;
     border-radius: 20px;
