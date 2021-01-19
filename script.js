@@ -31,3 +31,30 @@ $(document).ready(function () {
         }
     })
 })
+
+
+function theme() {
+    let home = document.getElementById("home")
+    let nav = document.getElementById('nav')
+    let content = document.getElementById("content")
+    let rules = document.getElementById('rules')
+    let more = document.querySelector(".more_content")
+    let timeline = document.getElementById('timeline')
+    let faq = document.getElementById('faq')
+    let faq_heading = document.getElementById('faq_heading')
+    let contact = document.getElementById('contact')
+    let main_title = document.querySelectorAll(".main_title")
+    home.classList.toggle("theme")
+    nav.classList.toggle('theme')
+    content.classList.toggle('theme')
+    rules.classList.toggle("theme")
+    more.classList.toggle('theme')
+    timeline.classList.toggle("theme")
+    faq.classList.toggle("theme")
+    faq_heading.classList.toggle("theme")
+    contact.classList.toggle("theme")
+    main_title.forEach((title) => {
+        title.classList.toggle("theme")
+    })
+
+}

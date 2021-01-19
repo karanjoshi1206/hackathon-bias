@@ -20,7 +20,7 @@
 
     <!-- main  -->
     <section id="home" class="main">
-        <nav class="nav">
+        <nav id="nav" class="nav">
             <div class="logo">
                 <a href="/">
                     <h1>Hackathon</h1>
@@ -63,8 +63,12 @@
             <rect x="50" y="20" rx="20" ry="20" width="90" height="90" style="fill:none;stroke:blue;stroke-width:5;" />
         </svg>
         <div class="main_content">
-            <h4>We bring <br> <b class="bold" style="font-size: 25px;">Technology and Innovation</b> <br> Together</h4>
-            <h3>48 hours of full <br> <b class="bold" style="font-size: 25px;">Learning and Excitement</b>
+            <input onclick="theme()" type="checkbox" name="check" id="theme">
+            <h4 class="main_title">We bring <br> <b class="bold" style="font-size: 25px;">Technology and Innovation</b>
+                <br> Together
+            </h4>
+            <h3 class="main_title">48 hours of full <br> <b class="bold" style="font-size: 25px;">Learning and
+                    Excitement</b>
             </h3>
             <h1><span class="main_left">Hacka</span><span class="main_right">thon</span></h1>
             <a href="#content">Browse More</a>
@@ -104,7 +108,7 @@
             </div>
 
         </section>
-        <section class="rules">
+        <section id="rules" class="rules">
             <h1>Rules</h1>
             <ol>
                 <li>One can participate in the event as an individual or a team.
@@ -137,7 +141,7 @@
     <!-- timeline  -->
 
 
-    <div class="timeline">
+    <div id="timeline" class="timeline">
         <ul>
             <li>
                 <div class="timeline_content">
@@ -191,7 +195,7 @@
     <!-- faq  -->
 
     <center>
-        <h1 style=" padding: 30px 0 0;  font-family: 'Iceland', cursive; background: #121212; margin-bottom:
+        <h1 id="faq_heading" style=" padding: 30px 0 0;  font-family: 'Iceland', cursive; background: #121212; margin-bottom:
             -20px;color: #fff;">
             Frequently Asked Questions
         </h1>
