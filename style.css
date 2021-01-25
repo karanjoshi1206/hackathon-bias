@@ -23,7 +23,7 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 10px 100px;
+  padding: 10px 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,6 +40,16 @@ section {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: "Iceland", cursive;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  height: 100px;
+  width: 150px;
+  margin-right: 20px;
 }
 .nav .list {
   margin-left: 50px;
@@ -305,6 +315,9 @@ section {
 .imp li {
   list-style-type: disc;
 }
+.content.theme .imp li {
+  color: black !important;
+}
 .rules {
   font-family: "Poppins", sans-serif;
   background: #121212;
@@ -322,6 +335,9 @@ section {
 .rules li {
   list-style: disc;
   margin-bottom: 10px;
+}
+.rules.theme li {
+  color: black;
 }
 /* more part styling  */
 .more {
@@ -371,7 +387,6 @@ section {
   margin: 40px !important;
   color: #ffffff;
 }
-/* hacktimeline styling  */
 
 /* faq page styling  */
 .faq {
@@ -515,7 +530,7 @@ section {
   position: absolute;
   left: 50%;
   width: 2px;
-  height: 100%;
+  height: 90%;
   background: #c5c5c5;
 }
 .timeline ul {
@@ -649,9 +664,25 @@ section {
   font-size: 18px;
   color: rgb(0, 217, 255);
 }
-.topic p,
-ol li {
+.topic p {
   color: white;
+}
+.line {
+  position: relative;
+  width: 100vw;
+  height: 60px;
+  background-color: #121212;
+}
+.line.theme {
+  background-color: white;
+}
+.line img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
 }
 /* responsiveness */
 @media (max-width: 990px) {
@@ -659,7 +690,7 @@ ol li {
     display: block;
   }
   .nav .list {
-    top: 49px;
+    top: 90px;
     left: -100%;
     margin: 0;
     display: block;
@@ -673,11 +704,12 @@ ol li {
     z-index: 99;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
+
   .logo h1 {
     font-size: 30px;
   }
   .nav .list.active {
-    top: 49px;
+    top: 90px;
     left: 0px;
     margin: 0;
     display: block;
@@ -855,6 +887,11 @@ ol li {
   }
 }
 @media (max-width: 500px) {
+  .logo img {
+    height: 70px;
+    width: 80px;
+    margin-right: 10px;
+  }
   .secondary_nav {
     margin: 10px 0 0;
   }

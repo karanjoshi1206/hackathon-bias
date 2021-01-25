@@ -193,7 +193,7 @@ a {
     padding: 100px 50px;
     text-align: center;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     background-color: #fff;
     transition: 0.5s;
     z-index: 99;
@@ -211,7 +211,8 @@ a {
     padding: 100px 50px;
     text-align: center;
     width: 100%;
-    height: fit-content;
+
+    height: 100vh;
     background-color: #fff;
     transition: 0.3s all ease;
     z-index: 999;

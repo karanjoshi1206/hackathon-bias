@@ -44,6 +44,8 @@ function theme() {
     let faq_heading = document.getElementById('faq_heading')
     let contact = document.getElementById('contact')
     let main_title = document.querySelectorAll(".main_title")
+    let imp = document.querySelector(".imp")
+    let lines = document.querySelectorAll(".line")
     home.classList.toggle("theme")
     nav.classList.toggle('theme')
     content.classList.toggle('theme')
@@ -52,7 +54,13 @@ function theme() {
     timeline.classList.toggle("theme")
     faq.classList.toggle("theme")
     faq_heading.classList.toggle("theme")
-    contact.classList.toggle("theme")
+    lines.forEach((line) => {
+        line.classList.toggle("theme")
+    })
+    imp.forEach((imps) => {
+        imps.classList.toggle("theme")
+    })
+    imp.classList.toggle("theme")
     main_title.forEach((title) => {
         title.classList.toggle("theme")
     })
