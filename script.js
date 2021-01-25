@@ -23,11 +23,11 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 40) {
-            $(".nav").css("background", "black");
+            $(".nav").css("background", "#070606");
         }
 
         else {
-            $(".nav").css("background", "none");
+            $(".nav").css("background", "black");
         }
     })
 })
@@ -58,3 +58,17 @@ function theme() {
     })
 
 }
+
+$(document).ready(function () {
+    $(".secondary_list_items").click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == "All") {
+            $('.topic').show('1000');
+        }
+        else {
+            $('.topic').not('.' + value).hide("1000")
+            $('.topic').filter('.' + value).show("1000")
+
+        }
+    })
+})

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon | BIAS -Topics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav id="nav" class="nav">
+        <div class="logo">
+            <a href="/">
+                <h1>Hackathon</h1>
+            </a>
+        </div>
+        <ul id="list" class="list">
+            <li><a onclick="toggle()" href="/index.html">Home</a></li>
+            <li><a onclick="toggle()" href="#content">About</a></li>
+            <li><a onclick="toggle()" href="#faq">FAQ</a></li>
+            <li><a href="/project.html">Projects</a></li>
+            <li><a href="/topics.html">Topics</a></li>
+            <li><a onclick="toggle()" href="#contact">Contact Us</a></li>
+            <li><a class="register" onclick="toggle()" href="#">Register for the event</a></li>
+
+        </ul>
+
+        <div id="ham" class="ham">
+            <i onclick="toggle()" id="bar" class="bar fas fa-bars"></i>
+            </svg>
+        </div>
+    </nav>
+    <section class="secondary_nav">
+        <ul class="secondary_list">
+            <li data-filter="All" class="secondary_list_items">All</li>
+
+            <li data-filter="women" class="secondary_list_items">Women Safety</li>
+            <li data-filter="steamPunk" class="secondary_list_items">STEAMPUNKS</li>
+            <li data-filter="medical" class="secondary_list_items">MEDICAL ISSUES</li>
+            <li data-filter="tour" class="secondary_list_items">TOURS & TRAVELS</li>
+        </ul>
+    </section>
+    <section class="topics">
+        <div class="women topic">
+            <h1 class="topic_heading">WOMEN SAFETY</h1>
+            <p class="topic_content">A recent WHO survey indicates that 35% of women globally, experience some form of
+                abuse or physical violence. While this in itself is shocking, this figure would shoot up even further if
+                unreported cases get reported. As law enforcement agencies strive to improve policing, a silent battle,
+                in parallel, is also being fought on the digital turf by mobile applications and wearable devices to
+                ensure women safety.
+                Let us look at some examples on how technology plays a significant role to ensure women safety:
+
+                Appalled by the growing incidents of crime against women, a Dutch start-up designed a wearable bracelet
+                that sends out alerts to friends, family, as well as the police, during a crisis. The device uses a
+                low-energy Bluetooth connection to sync to an app on the wearer's smartphone. The app lets the wearer
+                decide who she wants to notify in case of an emergency - friends, family members, the police, or a group
+                of users who agree to field emergency calls from other wearers. The app also uses the smartphone’s
+                microphone to record the incident and subsequently transmits the wearer’s location along with the audio
+                recording of the incident to the police.
+                In another development, a group of students from North Carolina University in the US have invented a
+                novel way of protecting women from sexual assault - a nail polish that detects the presence of drugs in
+                a drink. The nail polish will empower any women to discreetly ensure her safety simply by stirring her
+                drink with her finger. A change in colour of the nail polish indicates a spiked drink and this would
+                help women to swiftly take preventive steps before a potential catastrophe.
+                Everything you know about Women Safety is set to change.
+                From hyperloops to self-driving cars, from ride-hailing to micro-mobility, from multimodal travel to
+                flying taxis, we are in the process of completely reinventing how people move. And while we do know that
+                everything is about to change, we still need to figure out how.
+                This makes Women Safety one of the most exciting area in technology today. When you don't know what the
+                future looks like, you have the power to invent it!
+            </p>
+
+        </div>
+        <div class="steamPunk topic">
+            <h1 class="topic_heading">STEAMPUNKS</h1>
+            <p class="topic_content">Steampunk is a subgenre of science fiction, alternate history, and speculative
+                fiction. Specifically, it involves an era or world where steam power is still widely used—usually the
+                19th century and often Victorian era Britain—that incorporates prominent elements of either science
+                fiction or fantasy. Works of steampunk often feature anachronistic technology or futuristic innovations
+                as Victorians may have envisioned them; in other words, based on a Victorian perspective on fashion,
+                culture, architectural style, art, etc. This technology may include such fictional machines as those
+                found in the works of H. G. Wells and Jules Verne or real technologies like the computer but developed
+                earlier in an alternate history. Other examples of steampunk contain alternative history-style
+                presentations of "the path not taken" for such technology as lighter-than-air airships, analog
+                computers, or such digital mechanical computers as Charles Babbage and Ada Lovelace's Analytical engine.
+
+            </p>
+
+        </div>
+        <div class="medical topic">
+            <h1 class="topic_heading">MEDICAL ISSUES</h1>
+            <p class="topic_content">Although the level of technology in healthcare is at an all-time high, there is
+                still immense potential to use technology to automate daily operative processes and tasks.
+                Artificial Intelligence (AI) and the Internet of Things (IoT) can revolutionize health-tech for the
+                better and an effective way to determine this is to organize health-tech hackathons.
+                Here are a few health-tech hackathon ideas:
+
+            <ol style="margin-left:10px">
+                <li>Data processing for hospitals</li>
+                <li>Virtual health assistant</li>
+                <li> Remote patient examination</li>
+            </ol>
+            </p>
+
+        </div>
+        <div class="tour topic">
+            <h1 class="topic_heading">TOURS & TRAVELS</h1>
+            <p class="topic_content">Today, nobody doubts that technology and travel are the perfect combination. This
+                joint force also plays a crucial role in the way we travel: from the vacation destination we choose, all
+                the way to what we do once we're there and even in the time after we've come back from our adventure. It
+                is so prevalent, that according to a Google Travel study, 74% of travelers plan their trips on the
+                Internet, while only 13% still use travel agencies to prepare them.
+
+            </p>
+            <div class="sub_topic">
+                <h3 class="topic_heading"> Mobile Technology</h3>
+                <p class="topic_content">This is undoubtedly the main character in the new ways of travel. The cell
+                    phone has become our tour guide, travel agency, best restaurant locator, map, and more. It's by our
+                    side during the entire purchase journey. In fact, according to TripAdvisor, 45% of users use their
+                    smartphone for everything having to do with their vacations.</p>
+
+                <h3 class="topic_heading">Augmented Reality </h3>
+                <p class="topic_content">Augmented reality (AR) or virtual reality (VR) have also entered the travel
+                    world, and the truth is that it’s a trend due to all the possibilities they can offer. More and more
+                    companies use it to show users a cabin on a cruise ship or transport them, for a few seconds, to the
+                    Great Wall of China. </p>
+                <h3 class="topic_heading"> Internet of Things (IoT) </h3>
+                <p class="topic_content">The Internet of Things (IoT) promises to bring significant updates to the
+                    tourism industry. They include integrating sensors connected to the Internet inside items like cars,
+                    suitcases, buildings, and more.
+                </p>
+                <h3 class="topic_heading"> Virtual Assistants </h3>
+                <p class="topic_content">We’re all familiar with Siri and Alexa, the virtual assistants that meet all
+                    our needs: what’s the weather like today in my city, turn the radio on, open my email, and
+                    more.Hotels are now starting to enlist this “help” thanks to the arrival of virtual assistants that
+                    are specifically designed for this environment
+
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/script.js">
+    </script>
+</body>
+
+</html>
