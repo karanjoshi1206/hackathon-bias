@@ -57,6 +57,10 @@ section {
 .nav .list li a:hover {
   color: #15f4ee;
 }
+.page_active {
+  color: #15f4ee !important;
+}
+
 .ham {
   display: none;
   color: white;
@@ -86,6 +90,7 @@ section {
     background-color: #15f4ee;
   }
 }
+
 /* home page styling  */
 .main {
   height: 100vh;
