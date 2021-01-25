@@ -31,7 +31,16 @@ html {
 
   z-index: 99;
 }
-
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  height: 100px;
+  width: 150px;
+  margin-right: 20px;
+}
 .logo h1 {
   color: white;
   font-size: 40px;
@@ -250,6 +259,11 @@ a {
   }
 }
 @media (max-width: 720px) {
+  .logo img {
+    height: 70px;
+    width: 80px;
+    margin-right: 10px;
+  }
   .form_search {
     margin-top: 100px;
   }
