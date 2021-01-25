@@ -855,6 +855,12 @@ ol li {
   }
 }
 @media (max-width: 500px) {
+  .secondary_nav {
+    margin: 10px 0 0;
+  }
+  .topics {
+    padding-top: 10px;
+  }
   svg {
     height: 300px;
     width: 200px !important;
