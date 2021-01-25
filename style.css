@@ -893,7 +893,8 @@ section {
     margin-right: 10px;
   }
   .secondary_nav {
-    margin-top: 30px;
+    margin-top: 90px;
+    padding: 0;
   }
 
   svg {
