@@ -2,7 +2,7 @@ let url = `https://cors-anywhere.herokuapp.com/https://script.google.com/macros/
 async function searchdata() {
     const res = await fetch(url)
     const data = await res.json();
-    // console.log(data)
+    console.log(data)
     displaydata(data)
     displaytabledata(data)
 

@@ -622,7 +622,7 @@ section {
 /* topics page styling  */
 .secondary_nav {
   background: #121212;
-  margin: 40px 0 0;
+  margin-top: 70px;
   font-family: "Iceland", cursive;
 }
 .secondary_list {
@@ -651,8 +651,8 @@ section {
   background: #121212;
 }
 .topic {
-  margin: 50px 0;
   font-family: "Poppins", sans-serif;
+  margin: 10px 0;
 }
 .topic h1 {
   color: #15f4ee;
@@ -893,11 +893,9 @@ section {
     margin-right: 10px;
   }
   .secondary_nav {
-    margin: 10px 0 0;
+    margin-top: 30px;
   }
-  .topics {
-    padding-top: 10px;
-  }
+
   svg {
     height: 300px;
     width: 200px !important;
