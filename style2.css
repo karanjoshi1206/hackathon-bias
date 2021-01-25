@@ -194,7 +194,7 @@ a {
     display: block;
   }
   .nav .list {
-    top: 50px;
+    top: 90px;
     left: -100%;
     margin: 0;
     display: block;
@@ -212,7 +212,7 @@ a {
     font-size: 30px;
   }
   .nav .list.active {
-    top: 50px;
+    top: 90px;
     left: 0;
     margin: 0;
     display: block;
