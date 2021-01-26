@@ -23,7 +23,7 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 10px 70px;
+  padding: 0px 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -186,7 +186,7 @@ section {
   letter-spacing: 1px;
   font-family: "Iceland", cursive !important;
 }
-.main_content h4 {
+/* .main_content h4 {
   position: absolute;
   font-size: 20px;
   color: white;
@@ -204,12 +204,12 @@ section {
 
   top: 180px;
   right: -250px;
-}
+} */
 
-.main_title.theme {
+/* .main_title.theme {
   color: black;
-}
-#theme {
+} */
+/* #theme {
   position: absolute;
   font-size: 30px;
   right: -250px;
@@ -242,7 +242,7 @@ section {
 }
 #theme:checked::before {
   left: 40px;
-}
+} */
 .main_left {
   background: rgba(1, 225, 255, 0.692);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -288,10 +288,10 @@ section {
   background: #121212;
   color: white;
 }
-.content.theme {
+/* .content.theme {
   color: black;
   background-color: white;
-}
+} */
 .content img {
   height: 250px;
   width: 400px;
@@ -315,30 +315,33 @@ section {
 .imp li {
   list-style-type: disc;
 }
-.content.theme .imp li {
+/* .content.theme .imp li {
   color: black !important;
-}
+} */
 .rules {
   font-family: "Poppins", sans-serif;
   background: #121212;
   color: white;
   /* margin-top: 10px; */
 }
-.rules.theme {
+/* .rules.theme {
   color: black;
   background-color: white;
-}
+} */
 .rules h1 {
   margin-bottom: 10px;
   color: #15f4ee;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 .rules li {
   list-style: disc;
   margin-bottom: 10px;
 }
-.rules.theme li {
+/* .rules.theme li {
   color: black;
-}
+} */
 /* more part styling  */
 .more {
   padding: 5px 10px;
@@ -357,17 +360,17 @@ section {
   font-family: "Iceland", cursive;
   font-size: 30px;
 }
-.more_content.theme {
+/* .more_content.theme {
   color: black;
   background-color: white;
-}
-.more_content.theme h2,
+} */
+/* .more_content.theme h2,
 .more_content.theme h3,
 .more_content.theme h4,
 .more_content.theme h5,
 .more_content.theme h6 {
   color: black;
-}
+} */
 .more_content h2 {
   text-align: center;
   font-size: 30px;
@@ -397,13 +400,13 @@ section {
   background: #121212;
   font-family: "Iceland", cursive;
 }
-#faq_heading.theme {
+/* #faq_heading.theme {
   background-color: white !important;
   color: black !important;
 }
 .faq.theme {
   background-color: white;
-}
+} */
 .faq img {
   height: 300px;
   width: 500px;
@@ -422,6 +425,7 @@ section {
   -webkit-backdrop-filter: blur(4px);
   color: black;
   font-size: 30px;
+  cursor: pointer;
 }
 .faq .contentbx .label::before {
   content: "+";
@@ -470,13 +474,13 @@ section {
   background: #121212;
   /* margin-top: 10px; */
 }
-.contact.theme {
+/* .contact.theme {
   background-color: white;
   color: black;
 }
 .contact.theme p {
   color: black;
-}
+} */
 .contact h1 {
   margin: auto;
   padding: 10px 15px;
@@ -522,9 +526,9 @@ section {
   background: #121212;
   font-family: "Poppins", sans-serif;
 }
-.timeline.theme {
+/* .timeline.theme {
   background: white;
-}
+} */
 .timeline::before {
   content: "";
   position: absolute;
@@ -590,11 +594,11 @@ section {
   padding: 0;
   color: white;
 }
-.timeline.theme ul li p,
+/* .timeline.theme ul li p,
 .timeline.theme ul li:nth-child(odd) .time,
 .timeline.theme ul li:nth-child(even) .time {
   color: black;
-}
+} */
 .time.activetime {
   background: #15f4ee;
 }
@@ -653,10 +657,13 @@ section {
 .topic {
   font-family: "Poppins", sans-serif;
   margin: 10px 0;
+  min-height: 100vh;
 }
 .topic h1 {
   color: #15f4ee;
   margin-bottom: 10px;
+  font-size: 30px;
+  letter-spacing: 1.2px;
 }
 
 .sub_topic h3 {
@@ -666,16 +673,18 @@ section {
 }
 .topic p {
   color: white;
+  text-align: justify;
 }
 .line {
   position: relative;
-  width: 100vw;
+  bottom: 0;
+  /* width: 100vw; */
   height: 60px;
   background-color: #121212;
 }
-.line.theme {
+/* .line.theme {
   background-color: white;
-}
+} */
 .line img {
   position: absolute;
   top: 0;
@@ -731,7 +740,7 @@ section {
   }
 
   .nav {
-    padding: 10px;
+    padding: 5px;
   }
 
   section {
