@@ -1,4 +1,4 @@
-let url = `https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwUJRQF4zC0HQF5L2HauF1wh_Jn4SJtagdt3mqGRjLWg6fmq28/exec?sheetName=Hackathon`;
+let url = `https://script.google.com/macros/s/AKfycbwUJRQF4zC0HQF5L2HauF1wh_Jn4SJtagdt3mqGRjLWg6fmq28/exec?sheetName=Hackathon`;
 async function searchdata() {
     const res = await fetch(url)
     const data = await res.json();
